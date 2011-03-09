@@ -1,0 +1,46 @@
+####################################################
+# YAG theme SimpleBlog
+#
+# @author Daniel Lienert <daniel@lienert.cc> 
+# @author Michael Knoll <knoll@punkt.de>
+####################################################
+
+# Include CSS for this theme
+page.includeCSS.yag_theme_simpleBlog = EXT:yag_theme_simpleblog/Resources/Public/CSS/styles.css
+
+# Copy default settings from default theme
+plugin.tx_yag.settings.themes.simpleBlog < plugin.tx_yag.settings.themes.default
+
+# Some theme-specific settings
+plugin.tx_yag.settings.themes.simpleBlog {
+
+   resolutionConfigs {
+   
+      thumb {
+         width = 200
+         height = 200
+         quality = 
+      }
+      
+      lightbox {
+         width = 1200
+         height = 800
+      }
+      
+   }
+
+   controller {
+   
+      ItemList {
+         list.template = EXT:yag_theme_simpleblog/Resources/Private/Templates/ItemList/List.html
+      }
+      
+   }
+
+   itemList {
+      imageThumbPartial = EXT:yag_theme_simpleblog/Resources/Private/Partials/ImageThumb.html
+   }
+   
+}
+
+includeCSS.yag_theme_simpleBlog = EXT:yag_theme_simpleblog/Resources/Public/CSS/styles.css  
