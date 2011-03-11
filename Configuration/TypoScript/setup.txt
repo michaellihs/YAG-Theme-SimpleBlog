@@ -17,8 +17,8 @@ plugin.tx_yag.settings.themes.simpleBlog {
    resolutionConfigs {
    
       thumb {
-         width = 200
-         height = 200
+         width = 180
+         height = 180
          quality = 
       }
       
@@ -42,5 +42,3 @@ plugin.tx_yag.settings.themes.simpleBlog {
    }
    
 }
-
-includeCSS.yag_theme_simpleBlog = EXT:yag_theme_simpleblog/Resources/Public/CSS/styles.css  
