@@ -17,14 +17,14 @@ plugin.tx_yag.settings.themes.simpleBlog {
    resolutionConfigs {
    
       thumb {
-         width = 180
-         height = 180
+         maxW = 180
+         maxH = 180
          quality = 
       }
       
       lightbox {
-         width = 1200
-         height = 800
+         maxW = 1200
+         maxH = 800
       }
       
    }
