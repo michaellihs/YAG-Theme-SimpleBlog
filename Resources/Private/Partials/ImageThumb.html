@@ -6,7 +6,7 @@
 <f:if condition="{image.width} < {image.height}">
     <div class="tx-yag-theme-simpleblog-thumb tx-yag-theme-simpleblog-thumb-portrait">
 </f:if>
-<f:if condition="{image.width} = {image.height}">
+<f:if condition="{image.width} == {image.height}">
     <div class="tx-yag-theme-simpleblog-thumb tx-yag-theme-simpleblog-thumb-square">
 </f:if>
     <a href="{yag:resource.image(item: image, resolutionName: 'lightbox')}" rel="shadowbox[images_{image.album.uid}]" title="{image.title}"> 
