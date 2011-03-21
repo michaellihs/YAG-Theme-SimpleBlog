@@ -1,6 +1,14 @@
 {namespace yag=Tx_Yag_ViewHelpers}
 
-<div class="tx-yag-theme-simpleblog-thumb {f:if(condition: image.isLandscape, then:'tx-yag-theme-simpleblog-thumb-landscape', else:'tx-yag-theme-simpleblog-thumb-portrait')}">
+<f:if condition="{image.width} > {image.height}">
+    <div class="tx-yag-theme-simpleblog-thumb tx-yag-theme-simpleblog-thumb-landscape">
+</f:if>
+<f:if condition="{image.width} < {image.height}">
+    <div class="tx-yag-theme-simpleblog-thumb tx-yag-theme-simpleblog-thumb-portrait">
+</f:if>
+<f:if condition="{image.width} = {image.height}">
+    <div class="tx-yag-theme-simpleblog-thumb tx-yag-theme-simpleblog-thumb-square">
+</f:if>
     <a href="{yag:resource.image(item: image, resolutionName: 'lightbox')}" rel="shadowbox[images_{image.album.uid}]" title="{image.title}"> 
         <yag:image item="{image}" resolutionName="thumb" alt="{image.title}"/>
     </a>

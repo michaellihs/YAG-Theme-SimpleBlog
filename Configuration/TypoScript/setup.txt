@@ -17,8 +17,8 @@ plugin.tx_yag.settings.themes.simpleBlog {
    resolutionConfigs {
    
       thumb {
-         maxW = 180
-         maxH = 180
+         maxW = 200
+         maxH = 200
          quality = 
       }
       

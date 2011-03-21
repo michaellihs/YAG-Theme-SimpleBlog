@@ -46,3 +46,9 @@ div.tx-yag-theme-simpleblog-thumb-portrait img {
     width: 133px;
     margin: 0 33px;
 }
+
+div.tx-yag-theme-simpleblog-thumb-square img {
+    height: 200px; 
+    width: 200px;
+    margin: 0;
+}
