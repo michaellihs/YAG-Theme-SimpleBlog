@@ -42,3 +42,6 @@ plugin.tx_yag.settings.themes.simpleBlog {
    }
    
 }
+
+
+module.tx_yag.settings.themes < plugin.tx_yag.settings.themes
