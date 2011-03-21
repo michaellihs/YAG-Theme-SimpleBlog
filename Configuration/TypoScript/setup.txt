@@ -9,6 +9,8 @@
 page.includeCSS.yag_theme_simpleBlog = EXT:yag_theme_simpleblog/Resources/Public/CSS/styles.css
 
 # Copy default settings from default theme
+plugin.tx_yag.settings.themes.default.resolutionConfigs.thumb.maxH = 200
+plugin.tx_yag.settings.themes.default.resolutionConfigs.thumb.maxW = 200
 plugin.tx_yag.settings.themes.simpleBlog < plugin.tx_yag.settings.themes.default
 
 # Some theme-specific settings
