@@ -14,6 +14,9 @@ plugin.tx_yag.settings.themes.simpleBlog < plugin.tx_yag.settings.themes.default
 # Some theme-specific settings
 plugin.tx_yag.settings.themes.simpleBlog {
 
+   includeLibJS = jQuery,jQueryShadowBox
+   includeLibCSS = jQueryShadowBox
+
    resolutionConfigs {
    
       thumb {
